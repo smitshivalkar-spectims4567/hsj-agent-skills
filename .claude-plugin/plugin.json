@@ -1,0 +1,10 @@
+{
+  "name": "hsj",
+  "version": "0.2.0",
+  "description": "Human-supervised AI engineering skills, agents, workflows, and quality gates.",
+  "repository": "https://github.com/smitshivalkar-spectims4567/hsj-agent-skills",
+  "license": "MIT",
+  "keywords": ["ai-agents", "agent-skills", "coding-agents", "code-review", "tdd", "security"],
+  "skills": ["./skills/"],
+  "commands": ["./commands/"]
+}

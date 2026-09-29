@@ -2,9 +2,9 @@
 
 > **Human judgment. Senior direction. Junior execution.**
 
-[![Validate](https://github.com/smitshivalkar-spectims4567/hsj-agent-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/smitshivalkar-spectims4567/hsj-agent-skills/actions/workflows/validate.yml)
+[![Validate](https://github.com/smitshivalkar-spectims4567/hsj-agent-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/smitshivalkar-spectims4567/hsj-agent-skills/actions/workflows/validate.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Skills](https://img.shields.io/badge/skills-25-6f42c1.svg)](skills/) [![Adapters](https://img.shields.io/badge/adapters-8-0f766e.svg)](adapters/)
 
-HSJ is a provider-neutral collection of skills, specialist agents, workflows, and quality gates for AI coding tools.
+HSJ is a provider-neutral collection of skills, specialist agents, rules, workflows, and quality gates for AI coding tools.
 
 It helps an AI coding agent:
 
@@ -31,13 +31,14 @@ git clone https://github.com/smitshivalkar-spectims4567/hsj-agent-skills.git
 
 ## MVP
 
-- 10 reusable skills
+- 25 reusable skills
 - 4 specialist roles
 - 4 workflows
-- Human approval boundaries
+- Shared rules and prompt-defense guidance
+- Adapter notes for Claude Code, Codex, Cursor, Gemini CLI, Hermes, OpenClaw, OpenCode, and generic agents
 - A lightweight validator
 
-Start with the generic files in this repository. Provider adapters will be added only after they are tested.
+Start with the generic files in this repository. Provider adapters document placement and compatibility without silently changing global configuration.
 
 ## Roles
 

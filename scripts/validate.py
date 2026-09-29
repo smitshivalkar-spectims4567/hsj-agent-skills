@@ -20,12 +20,22 @@ for path in skills:
         if name in names:
             errors.append(f"duplicate skill name: {name}")
         names.append(name)
+        if name != path.parent.name:
+            errors.append(f"{path}: frontmatter name does not match directory")
+    if not re.search(r"^version:\s*.+$", text, re.MULTILINE):
+        errors.append(f"{path}: missing version")
     if not re.search(r"^description:\s*.+$", text, re.MULTILINE):
         errors.append(f"{path}: missing description")
+    if len(text.split()) < 40:
+        errors.append(f"{path}: skill is too short to be operational")
 
 for directory in ("agents", "workflows"):
     if not any((ROOT / directory).glob("*.md")):
         errors.append(f"{directory}: no markdown files")
+
+for required in ("AGENTS.md", "CLAUDE.md", "GEMINI.md", ".hermes/README.md", ".openclaw/README.md", ".opencode/README.md", ".claude-plugin/plugin.json", ".codex-plugin/plugin.json", "adapters/README.md", "rules/common.md"):
+    if not (ROOT / required).exists():
+        errors.append(f"missing adapter or policy file: {required}")
 
 if errors:
     print("HSJ validation failed")

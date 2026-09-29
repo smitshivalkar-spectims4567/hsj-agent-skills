@@ -1,0 +1,8 @@
+{
+  "name": "hsj",
+  "version": "0.2.0",
+  "description": "Portable AI engineering workflows for Codex and compatible coding agents.",
+  "repository": "https://github.com/smitshivalkar-spectims4567/hsj-agent-skills",
+  "license": "MIT",
+  "skills": "./skills/"
+}
