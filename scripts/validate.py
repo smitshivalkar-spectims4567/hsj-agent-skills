@@ -37,6 +37,20 @@ for required in ("AGENTS.md", "CLAUDE.md", "GEMINI.md", ".hermes/README.md", ".o
     if not (ROOT / required).exists():
         errors.append(f"missing adapter or policy file: {required}")
 
+agency_divisions = {"academic", "design", "engineering", "finance", "game-development", "gis", "healthcare", "marketing", "paid-media", "product", "project-management", "research", "sales", "security", "spatial-computing", "specialized", "support", "testing"}
+agency_files = sorted((ROOT / "agency").glob("**/*.md"))
+for path in agency_files:
+    relative = path.relative_to(ROOT / "agency")
+    if not relative.parts or relative.parts[0] not in agency_divisions:
+        continue
+    text = path.read_text(errors="replace")
+    if not text.startswith("---\n") or "\n---\n" not in text[4:]:
+        errors.append(f"{path}: agency agent missing frontmatter")
+        continue
+    for field in ("name", "description"):
+        if not re.search(rf"^{field}:\s*.+$", text, re.MULTILINE):
+            errors.append(f"{path}: agency agent missing {field}")
+
 if errors:
     print("HSJ validation failed")
     print("\n".join(f"- {e}" for e in errors))

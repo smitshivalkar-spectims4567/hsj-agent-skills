@@ -72,7 +72,16 @@ Human approval needed:
 - **Shared rules:** use repository-level guardrails for safety and consistency.
 - **Adapter documentation:** keep provider-specific placement separate from canonical content.
 
-## Roadmap
+## Agency roster
+
+HSJ also includes an optional specialist roster under `agency/`. It follows the division-based, personality-plus-deliverables format used by public agent collections. The roster is separate from canonical skills so a user can search for one expert without loading hundreds of prompts.
+
+```bash
+python3 scripts/agency_catalog.py search "frontend accessibility"
+python3 scripts/agency_catalog.py search "multi-agent systems"
+```
+
+The imported roster is licensed and attributed separately in `agency/AGENCY-LICENSE.txt`. Review external agent text before use.
 
 HSJ is deliberately smaller than broad agent harnesses. The next useful additions are tested adapters, examples against real repositories, and evaluation cases that show when a skill improves an outcome. New skills should earn their place through a repeated task, not a bigger number.
 
