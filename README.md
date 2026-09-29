@@ -1,6 +1,8 @@
 # HSJ
 
-**Human judgment. Senior direction. Junior execution.**
+> **Human judgment. Senior direction. Junior execution.**
+
+[![Validate](https://github.com/smitshivalkar-spectims4567/hsj-agent-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/smitshivalkar-spectims4567/hsj-agent-skills/actions/workflows/validate.yml)
 
 HSJ is a provider-neutral collection of skills, specialist agents, workflows, and quality gates for AI coding tools.
 
@@ -14,6 +16,18 @@ It helps an AI coding agent:
 6. Report what actually happened.
 
 HSJ is intentionally Markdown-first. It does not replace Claude Code, Hermes, Cursor, Codex, or another agent runtime. It gives those tools a disciplined engineering team model.
+
+## Why HSJ exists
+
+Most AI coding agents can write code. The difficult part is making them work like a careful engineering team: understand first, plan before editing, use focused specialists, verify changes, and report uncertainty honestly. HSJ packages those habits as portable Markdown.
+
+## Install
+
+Clone the repository, then copy the skills, agents, or workflows into the AI coding tool you use. HSJ is Markdown-first so it can be adapted without a runtime or vendor lock-in.
+
+```bash
+git clone https://github.com/smitshivalkar-spectims4567/hsj-agent-skills.git
+```
 
 ## MVP
 
@@ -47,6 +61,14 @@ Tests not run:
 Known risks:
 Human approval needed:
 ```
+
+## Design principles
+
+- **Progressive disclosure:** load only the skills relevant to the task.
+- **Bounded specialists:** use a separate agent when focused context or permissions improve reliability.
+- **Evidence over confidence:** never claim tests passed unless they ran.
+- **Smallest correct change:** reuse existing project patterns before adding abstractions.
+- **Human approval:** pause before destructive, irreversible, external, or production actions.
 
 ## Status
 
