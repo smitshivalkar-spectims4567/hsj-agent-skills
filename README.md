@@ -2,7 +2,7 @@
 
 > **Human judgment. Senior direction. Junior execution.**
 
-[![Validate](https://github.com/smitshivalkar-spectims4567/hsj-agent-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/smitshivalkar-spectims4567/hsj-agent-skills/actions/workflows/validate.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Skills](https://img.shields.io/badge/skills-25-6f42c1.svg)](skills/) [![Adapters](https://img.shields.io/badge/adapters-8-0f766e.svg)](adapters/)
+[![Validate](https://github.com/smitshivalkar-spectims4567/hsj-agent-skills/actions/workflows/validate.yml/badge.svg)](https://github.com/smitshivalkar-spectims4567/hsj-agent-skills/actions/workflows/validate.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Skills](https://img.shields.io/badge/skills-16-6f42c1.svg)](skills/) [![Adapters](https://img.shields.io/badge/adapters-8-0f766e.svg)](adapters/)
 
 HSJ is a provider-neutral collection of skills, specialist agents, rules, workflows, and quality gates for AI coding tools.
 
