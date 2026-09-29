@@ -19,7 +19,7 @@ HSJ is intentionally Markdown-first. It does not replace Claude Code, Hermes, Cu
 
 ## Why HSJ exists
 
-Most AI coding agents can write code. The difficult part is making them work like a careful engineering team: understand first, plan before editing, use focused specialists, verify changes, and report uncertainty honestly. HSJ packages those habits as portable Markdown.
+Most AI coding agents can write code. The difficult part is getting them to work like a careful engineering team: understand first, plan before editing, use focused specialists, verify changes, and report uncertainty honestly. HSJ packages those habits as portable Markdown.
 
 ## Install
 
@@ -69,7 +69,12 @@ Human approval needed:
 - **Bounded specialists:** use a separate agent when focused context or permissions improve reliability.
 - **Evidence over confidence:** never claim tests passed unless they ran.
 - **Smallest correct change:** reuse existing project patterns before adding abstractions.
-- **Human approval:** pause before destructive, irreversible, external, or production actions.
+- **Shared rules:** use repository-level guardrails for safety and consistency.
+- **Adapter documentation:** keep provider-specific placement separate from canonical content.
+
+## Roadmap
+
+HSJ is deliberately smaller than broad agent harnesses. The next useful additions are tested adapters, examples against real repositories, and evaluation cases that show when a skill improves an outcome. New skills should earn their place through a repeated task, not a bigger number.
 
 ## Status
 
