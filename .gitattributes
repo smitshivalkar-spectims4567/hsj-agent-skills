@@ -1,0 +1,5 @@
+*.md linguist-documentation
+*.json linguist-language=JSON
+*.yml linguist-language=YAML
+*.sh linguist-language=Shell
+*.mjs linguist-language=JavaScript

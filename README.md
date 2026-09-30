@@ -27,7 +27,11 @@ Clone the repository, then copy the skills, agents, or workflows into the AI cod
 
 ```bash
 git clone https://github.com/smitshivalkar-spectims4567/hsj-agent-skills.git
+cd hsj-agent-skills
+./scripts/install.sh /path/to/your-project
 ```
+
+The installer copies content to `.hsj/` and does not modify global credentials, hooks, MCP servers, or permissions. Review the copied files before enabling them in an agent.
 
 ## MVP
 
